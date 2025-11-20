@@ -5,28 +5,29 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/20 11:03:41 by marvin            #+#    #+#             */
-/*   Updated: 2025/11/20 11:03:41 by marvin           ###   ########.fr       */
+/*   Created: 2025/11/20 14:47:50 by marvin            #+#    #+#             */
+/*   Updated: 2025/11/20 14:47:50 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	ZOMBIE_HPP
-#define	ZOMBIE_HPP
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
 #include <iostream>
-#include <cctype>
 #include <string>
 
 class Zombie
 {
 private:
-	std::string	name;
+    std::string name;
 public:
-	Zombie(std::string zombie);
-	~Zombie();
-	void	announce(void);
+    Zombie();
+    Zombie(std::string zombieName);
+    ~Zombie();
+    void    announce();
+    void    setName(std::string zombie);
 };
 
-Zombie*	newZombie(std::string name);
-void	randomChump(std::string name);
+Zombie* zombieHorde(int N, std::string name);
+
 #endif

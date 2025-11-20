@@ -1,13 +1,12 @@
-NAME	=	BraiiiiiiinnnzzzZ
+NAME	=	MoarBrainz
 
 C++		=	c++
 
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 SRC		=	Zombie.cpp		\
-			newZombie.cpp	\
-			randomChump.cpp	\
 			main.cpp		\
+			zombieHorde.cpp	\
 
 OBJS	=	$(SRC:.cpp=.o)
 
