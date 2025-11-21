@@ -1,10 +1,13 @@
-NAME	=	
+NAME	=	Humans
 
 C++		=	c++
 
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
 
-SRC		=	
+SRC		=	main.cpp		\
+			Weapon.cpp		\
+			HumanA.cpp		\
+			HumanB.cpp		\
 
 OBJS	=	$(SRC:.cpp=.o)
 

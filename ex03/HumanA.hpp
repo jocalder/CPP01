@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jocalder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/20 17:19:10 by marvin            #+#    #+#             */
-/*   Updated: 2025/11/20 17:19:10 by marvin           ###   ########.fr       */
+/*   Created: 2025/11/21 14:46:07 by jocalder          #+#    #+#             */
+/*   Updated: 2025/11/21 14:46:08 by jocalder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HUMANA_HPP
-#define HUMANB_HPP
+#define HUMANA_HPP
 
 #include "Weapon.hpp"
 
@@ -19,9 +19,11 @@ class HumanA
 {
     private:
         Weapon  &weapon;
-        std::string name
+        std::string name;
     public:
-        HumanA(const std::string &name, Weapon &weapon)
+        HumanA(const std::string &name, Weapon &weapon);
         ~HumanA();
         void    attack() const;
 };
+
+#endif

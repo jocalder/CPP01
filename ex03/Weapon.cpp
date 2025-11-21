@@ -3,25 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jocalder <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/20 17:07:23 by marvin            #+#    #+#             */
-/*   Updated: 2025/11/20 17:07:23 by marvin           ###   ########.fr       */
+/*   Created: 2025/11/21 14:45:44 by jocalder          #+#    #+#             */
+/*   Updated: 2025/11/21 14:45:46 by jocalder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
-
-Weapon::weapon(): type("") {}
 
 Weapon::Weapon(const std::string &type)
 {
     this->type = type;
 }
 
-Weapon::~weapon() {}
+Weapon::~Weapon() {}
 
-const &Weapon::getType() const
+const std::string   &Weapon::getType() const
 {
     return (this->type);
 }
