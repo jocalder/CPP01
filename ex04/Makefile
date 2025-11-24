@@ -1,4 +1,4 @@
-NAME	=	Replace
+NAME	=	replace
 
 C++		=	c++
 
